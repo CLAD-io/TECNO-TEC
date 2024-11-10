@@ -23,7 +23,9 @@ body {
 .banner {
     height: 100px;
 }
-
+.banner a{
+    text-decoration: none;
+}
 .imagen-banner,
 .imagen-banner-large {
     height: 300px;

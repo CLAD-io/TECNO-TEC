@@ -10,6 +10,12 @@
     margin-top: 60px;
     background-color: rgba(158, 158, 158, 0.342);
     padding: 20px;
-
-    
+}
+span{
+    font-weight: bolder;
+}
+.msj_final{
+    width: 80%;
+    margin: auto;
+    text-align: center;
 }
