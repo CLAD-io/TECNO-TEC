@@ -1,0 +1,15 @@
+
+.nosotros-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    gap: 25px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    background-color: rgba(158, 158, 158, 0.342);
+    padding: 20px;
+
+    
+}
