@@ -13,6 +13,7 @@ body {
 
 :root {
     --color_principal: #b2bed8;
+    --color_secundario: #b2bed88a;
     --color_pricipal_fondo: rgb(138, 26, 26);
     --colo_secundario_fondo: rgb(1, 0, 43);
     --bordes_formulario: rgba(253, 0, 0, 0.37);
@@ -23,9 +24,11 @@ body {
 .banner {
     height: 100px;
 }
-.banner a{
+
+.banner a {
     text-decoration: none;
 }
+
 .imagen-banner,
 .imagen-banner-large {
     height: 300px;
@@ -45,20 +48,13 @@ body {
     font-size: 2rem;
     animation-name: aparecer;
     animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 .titulo-bienvenida2 {
     display: none;
 }
 
-.sub-bienvenida {
-    position: absolute;
-    top: 20px;
-    font-size: 1.5rem;
-    color: var(--color_principal);
-    text-align: center;
-    display: none;
-}
 
 /* HEADER - NAV */
 .nav-items {
@@ -255,13 +251,26 @@ cite {
     text-align: center;
 }
 
+
+/* Responsive - MEDIA QUERIES  */
+/*  PANTALLAS MAYORES A 810PX */
 @media (width>810px) {
-    /* .titulo-bienvenida2{
-        display: initial;
+
+    .titulo-bienvenida2 {
+        display: inline-block;
+        visibility: hidden;
         position: relative;
-        top: -100px;
-        color: var(--color_principal);
-    } */
+        top: -159px;
+        left: 20px;
+        color: var(--color_secundario);
+        font-size: x-large;
+        animation-name: deslizar;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards; 
+    }
+
     .imagen-banner {
         display: none;
     }
@@ -282,6 +291,7 @@ cite {
         flex-direction: row;
         justify-content: end;
         gap: 20px;
+        margin-top: 20px;
     }
 
     .tarjetas-cursos {
@@ -310,13 +320,15 @@ cite {
         justify-content: center;
         gap: 30px;
         margin-top: 30px;
+
     }
 
 }
 
+
+/*  PANTALLAS MAYORES A 1000PX */
+
 @media (width>1000px) {
-  
-   
     .tarjetas-cursos {
         max-width: 90%;
         margin: 50px auto;
@@ -325,10 +337,12 @@ cite {
         justify-content: center;
         justify-items: center;
     }
+
     .tarjetas-cursos .card:nth-child(3) {
         display: initial;
     }
-    .img-mas_info{
+
+    .img-mas_info {
         grid-column: 1/4;
     }
 
@@ -354,13 +368,33 @@ cite {
         font-size: 1.3rem;
     }
 
-    
 }
+
+/* ANIMACION DEL TITULO */
+
 @keyframes aparecer {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
-        opacity:  1;
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes deslizar {
+
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+        visibility: visible;
+
     }
 }
