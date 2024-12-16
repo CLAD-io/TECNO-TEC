@@ -9,6 +9,8 @@
 3. Virtualización
 4. Arquitecturas de computadoras
 5. Administrador de Active Directory
+6. Internet de las cosas
+7. Reparacion de Notebooks
 
 ### Estas son las resoluciones que utilicé para el responsive
 

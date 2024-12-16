@@ -31,7 +31,7 @@ body {
 
 .imagen-banner,
 .imagen-banner-large {
-    height: 300px;
+    height: 330px;
 
 }
 
@@ -76,6 +76,9 @@ li a {
     color: var(--color_principal);
 }
 
+.img-carrito{
+    display: none;
+}
 
 /* MAIN */
 /* SECCION - TARJETAS-CURSOS */
@@ -329,6 +332,10 @@ cite {
 /*  PANTALLAS MAYORES A 1000PX */
 
 @media (width>1000px) {
+
+    .img-carrito{
+        display: initial;
+    }
     .tarjetas-cursos {
         max-width: 60%;
         margin: 50px auto;
