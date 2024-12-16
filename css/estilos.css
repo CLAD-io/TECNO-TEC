@@ -330,7 +330,7 @@ cite {
 
 @media (width>1000px) {
     .tarjetas-cursos {
-        max-width: 90%;
+        max-width: 60%;
         margin: 50px auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
