@@ -31,7 +31,7 @@ body {
 
 .imagen-banner,
 .imagen-banner-large {
-    height: 330px;
+    height: 360px;
 
 }
 
@@ -41,7 +41,7 @@ body {
 
 .titulo-bienvenida {
     position: relative;
-    top: -250px;
+    top: -300px;
     left: 20px;
     width: 310px;
     color: var(--color_principal);
@@ -75,7 +75,6 @@ li a {
     font-size: 1.5rem;
     color: var(--color_principal);
 }
-
 .img-carrito{
     display: none;
 }
@@ -259,6 +258,14 @@ cite {
 /*  PANTALLAS MAYORES A 810PX */
 @media (width>810px) {
 
+    .img-carrito{
+        display: initial;
+        margin-right: 20px;
+    }
+    .ver-carrito{
+        display: none;
+    }
+
     .titulo-bienvenida2 {
         display: inline-block;
         visibility: hidden;
@@ -333,9 +340,6 @@ cite {
 
 @media (width>1000px) {
 
-    .img-carrito{
-        display: initial;
-    }
     .tarjetas-cursos {
         max-width: 60%;
         margin: 50px auto;
